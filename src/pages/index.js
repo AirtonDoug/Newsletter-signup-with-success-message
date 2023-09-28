@@ -11,7 +11,7 @@ export default function Home() {
   const router = useRouter();
 
   const validateEmail = (email) => {
-    const emailPattern = /\S+@\S+\.\S+/;
+    const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return emailPattern.test(email)
 
   }
